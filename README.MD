@@ -42,7 +42,7 @@ depending on the environment and region we want to deploy to.
 
 2. Execute the AWS docker container.
 ```bash
-docker run -it --rm --env-file env.list -v $HOME/Projects/williamahern-com-infrastructure:/williamahern-com-infrastructure -t aws
+docker run -it --rm --env-file env.list -v $HOME/Projects/infrastructure-library:/infrastructure-library -t aws:latest
 ```
 
 3. Run Terragrunt + Terraform commands to your heart's delight!
